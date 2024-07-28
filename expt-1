@@ -43,14 +43,17 @@ complex c=new complex();
 
 c.accept();
 c.display();
-
-
-
-
-
-
-
-
 }
 
 }
+----------------OUTPUT---------------------
+Program to add two complex numbers
+Enter real part:
+3
+Enter imaginary part 1:
+5
+Enter real part 2:
+5
+Enter imaginary part 2:
+3
+Sum of two complex number is:8+8i
