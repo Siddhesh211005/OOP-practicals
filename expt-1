@@ -1,0 +1,56 @@
+package sum_of_cmplx_no;
+import java.util.Scanner;
+
+
+public class complex {
+int real1 ;
+    int img1;
+int real2;
+int img2;
+complex()
+{
+System.out.println("Program to add two complex numbers");
+}
+complex(int r1,int r2,int i1,int i2)  {
+this.real1=r1;
+this.real2=r2;
+this.img1=i1;
+this.img2=i2;
+
+}
+void accept() {
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter real part:");
+this.real1=sc.nextInt();
+System.out.println("Enter imaginary part 1:");
+this.img1=sc.nextInt();
+System.out.println("Enter real part 2:");
+this.real2=sc.nextInt();
+System.out.println("Enter imaginary part 2:");
+
+this.img2=sc.nextInt();
+
+}
+void display() {
+int sum_r= this.real1 + this.real2;
+
+System.out.println("Sum of two complex number is:"+(sum_r)+ "+"+(this.img1 + this.img2)+"i");
+}
+public static void main(String[] args) {
+
+complex c=new complex();
+//complex c=new complex(r1,r2,i1,i2);
+
+c.accept();
+c.display();
+
+
+
+
+
+
+
+
+}
+
+}
